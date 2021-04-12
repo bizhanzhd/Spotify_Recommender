@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>SpotifyMe</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for("static", filename="css/main.css") }}" />
+	</head>
+	<body>
+
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="{{ url_for("home") }}" class="active"><span class="icon fa-home"></span></a></li>
+						<li><a href="{{ url_for("results") }}"><span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="{{ url_for("logout") }}"><span class="icon fa-file-text-o"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+
+					<section id="galleries">
+					<!-- Photo Galleries -->
+						<div class="gallery">
+					    <header>
+					    	<h1>Gallery</h1>
+					    	<ul class="tabs">
+					    		<li><a href="#" data-tag="top" class="button active">Top 10</a></li>
+					    		<li><a href="#" data-tag="taste" class="button">Your Taste</a></li>
+					    		<li><a href="#" data-tag="mood" class="button">Your Mood</a></li>
+					    		<li><a href="#" data-tag="recom" class="button">Recommends</a></li>
+					    	</ul>
+					    </header>
+
+					    <div class="content">
+					    	<div class="media top">
+					    		<a href="{{url_for("static", filename="images/top1.png")}}"> <img src="{{url_for("static", filename="images/top1.png")}}" alt="" title="Top Tracks that you recently have listened to"/></a>
+					    	</div>
+					    	<div class="media top">
+					    		<a href="{{url_for("static", filename="images/top2.png")}}"> <img src="{{url_for("static", filename="images/top2.png")}}" alt="" title="Did you know what are your top tracks?" /></a>
+					    	</div>
+					    	<div class="media top">
+					    		<a href="{{url_for("static", filename="images/top3.png")}}"> <img src="{{url_for("static", filename="images/top3.png")}}" alt="" title="See a list of Artists you have been recently listening to." /></a>
+					    	</div>
+					    	<div class="media top">
+					    		<a href="{{url_for("static", filename="images/top4.png")}}"> <img src="{{url_for("static", filename="images/top4.png")}}" alt="" title="Here see instead your all time best Artists" /></a>
+					    	</div>
+					    	<div class="media taste">
+					    		<a href="{{url_for("static", filename="images/taste1.png")}}"><img src="{{url_for("static", filename="images/taste1.png")}}" alt="" title="Your taste of music is incredible" /></a>
+					    	</div>
+					    	<div class="media taste">
+					    		<a href="{{url_for("static", filename="images/taste2.png")}}"><img src="{{url_for("static", filename="images/taste2.png")}}" alt="" title="The tracks you listen to are ..." /></a>
+					    	</div>
+					    	<div class="media mood">
+					    		<a href="{{url_for("static", filename="images/mood1.png")}}"><img src="{{url_for("static", filename="images/mood1.png")}}" alt="" title="Do you know how much popular are your top artists on spotify?" /></a>
+					    	</div>
+					    	<div class="media mood">
+					    		<a href="{{url_for("static", filename="images/mood1.png")}}"><img src="{{url_for("static", filename="images/mood2.png")}}" alt="" title="Are you an active person?" /></a>
+					    	</div>
+					    	<div class="media recom">
+					    		<a href=" {{url_for("static", filename="images/recom0.png")}} "><img src="{{url_for("static", filename="images/recom0.png")}}" alt="" title=" Album name: {{ names[0] }} " /></a>
+					    	</div>
+					    	<div class="media recom">
+					    		<a href=" {{url_for("static", filename="images/recom1.png")}} "><img src="{{url_for("static", filename="images/recom1.png")}}" alt="" title="Album name: {{ names[1] }}" /></a>
+					    	</div>
+					    	<div class="media recom">
+					    		<a href=" {{url_for("static", filename="images/recom2.png")}} "><img src="{{url_for("static", filename="images/recom2.png")}}" alt="" title="Album name: {{ names[2] }}" /></a>
+					    	</div>
+					    	<div class="media recom">
+					    		<a href=" {{url_for("static", filename="images/recom3.png")}} "><img src="{{url_for("static", filename="images/recom3.png")}}" alt="" title="Album name: {{ names[3] }}" /></a>
+					    	</div>
+					    </div>
+					  </div>
+					</section>
+
+
+					<!-- Footer -->
+						<footer id="footer">
+							<div class="copyright">
+								&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images: <a href="https://unsplash.com/">Unsplash</a>.
+							</div>
+						</footer>
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/jquery.poptrox.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+	</body>
+</html>

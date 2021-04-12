@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Generic - Snapshot by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{url_for("static", filename= "css/main.css")}}" />
+	</head>
+	<body>
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="{{ url_for("authorize")}}"><span class="icon fa-home"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+
+					<!-- Header -->
+						<header id="header">
+							<div><span><img src="{{url_for("static",filename="images/begear.png")}}"> </span></div>
+						</header>
+
+					<!-- Section -->
+						<section>
+							<div class="inner">
+								<header>
+									<h1>SpotifyMe</h1>
+								</header>
+								<p>SpotifyMe is a web application with a Python Flask backend. This web application is designed to connect to Spotify API
+								 using "User Authorization Flow Code". Capturing your latest playlist and some other basic information enforces us to build analysis and recommendations to
+			 			 		enhance your spotify experience. You will be able to see also some more detailed analysis of the your taste and mood of music</p>
+								<p> Please give us the possibility to access your data.</p>
+      					<p> To continue please click here:  <a href="{{ url_for("authorize") }}"> <img src="{{url_for("static",filename="images/Spotify.png")}}" alt="" width="20" height="20"> </a></p></p>
+								<section class="columns double">
+									<div class="column">
+										<span class="image left special" width="200" height="200"> <a href="https://www.linkedin.com/in/bizhan-zahedi/"> <img src="{{url_for("static",filename="images/linkedin.png")}}" alt="" /></a></span>
+										<h3>Bizhan Zahedi</h3>
+										<p><img src="{{url_for("static",filename="images/bizhan.jpg")}}" alt=""></p>
+									</div>
+									<div class="column">
+										<span class="image left special" width="200" height="200" ><a href="https://www.linkedin.com/in/caterina-vitale-6858a01ba/"><img src="{{url_for("static",filename="images/linkedin.png")}}"  alt="" /></a></span>
+										<h3>Caterina Vitale</h3>
+										<p><img src="{{url_for("static",filename="images/caterina.jpg")}}" alt=""></p>
+									</div>
+								</section>
+							</div>
+						</section>
+
+					<!-- Contact -->
+						<section id="contact">
+							<!-- Social -->
+								<div class="social column">
+									<h3>About us</h3>
+									<p>This project was performed in Python Academy of <a href="www.begear.it">Begear SRL</a>  under the supervision of <a href="https://www.accenture.com/">ACCENTURE</a> italian section.</p>
+								</div>
+
+						</section>
+
+					<!-- Footer -->
+						<footer id="footer">
+							<div class="copyright">
+								&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images: <a href="https://unsplash.com/">Unsplash</a>.
+							</div>
+						</footer>
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<script src="{{url_for("static", filename="js/jquery.min.js")}}"></script>
+			<script src="{{url_for("static", filename="js/jquery.poptrox.min.js")}}"></script>
+			<script src="{{url_for("static", filename="js/jquery.scrolly.min.js")}}"></script>
+			<script src="{{url_for("static", filename="js/skel.min.js")}}"></script>
+			<script src="{{url_for("static", filename="js/util.js")}}"></script>
+			<script src="{{url_for("static", filename="js/main.js")}}"></script>
+
+	</body>
+</html>

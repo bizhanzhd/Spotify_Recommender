@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>SpotifyMe</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for("static", filename="css/main.css") }}" />
+	</head>
+	<body>
+
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="{{ url_for("home") }}" class="active"><span class="icon fa-home"></span></a></li>
+						<li><a href="{{ url_for("results") }}"><span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="{{ url_for("logout") }}"><span class="icon fa-file-text-o"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+
+					<!-- Banner -->
+						<section id="banner" style="background-image: url({{ url_for('static', filename='images/banner.jpeg') }});">
+							<div class="inner">
+								<h1>Welcome to SpotifyMe</h1>
+								<p>We would tell you about new releases you would like</p>
+								<ul class="actions">
+									<li><a href="#galleries" class="button alt scrolly big">Continue</a></li>
+								</ul>
+							</div>
+						</section>
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+									<header class="special">
+										<h2>What's New</h2>
+									</header>
+									<div class="content">
+										<div class="media">
+											<a href="{{ url_for('static', filename='images/sample_image0.png') }}"><img src="{{ url_for('static', filename='images/sample_image0.png') }}" alt="" title="Album name: {{ names[0] }}" /></a>
+										</div>
+										<div class="media">
+											<a href="{{ url_for('static', filename='images/sample_image1.png') }}"><img src="{{ url_for('static', filename='images/sample_image1.png') }}" alt="" title="Album name: {{ names[1] }}" /></a>
+										</div>
+										<div class="media">
+											<a href="{{ url_for('static', filename='images/sample_image2.png') }}"><img src="{{ url_for('static', filename='images/sample_image2.png') }}" alt="" title="Album name: {{ names[2] }}" /></a>
+										</div>
+										<div class="media">
+											<a href="{{ url_for('static', filename='images/sample_image3.png') }}"><img src="{{ url_for('static', filename='images/sample_image3.png') }}" alt="" title="Album name: {{ names[3] }}" /></a>
+										</div>
+										<div class="media">
+											<a href="{{ url_for('static', filename='images/sample_image4.png') }}"><img src="{{ url_for('static', filename='images/sample_image4.png') }}" alt="" title="Album name: {{ names[4] }}" /></a>
+										</div>
+										<div class="media">
+											<a href="{{ url_for('static', filename='images/sample_image5.png') }}"><img src="{{ url_for('static', filename='images/sample_image5.png') }}" alt="" title="Album name: {{ names[5] }}" /></a>
+										</div>
+										<div class="media">
+											<a href="{{ url_for('static', filename='images/sample_image6.png') }}"><img src="{{ url_for('static', filename='images/sample_image6.png') }}" alt="" title="Album name: {{ names[6] }}" /></a>
+										</div>
+										<div class="media">
+											<a href="{{ url_for('static', filename='images/sample_image7.png') }}"><img src="{{ url_for('static', filename='images/sample_image7.png') }}" alt="" title="Album name: {{ names[7] }}" /></a>
+										</div>
+									</div>
+									<footer>
+										<a href="{{ url_for('results') }}" class="button big">Discover your Spotify</a>
+									</footer>
+								</div>
+						</section>
+
+
+					<!-- Footer -->
+						<footer id="footer">
+							<div class="copyright">
+								&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images: <a href="https://unsplash.com/">Unsplash</a>.
+							</div>
+						</footer>
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/jquery.poptrox.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+	</body>
+</html>
