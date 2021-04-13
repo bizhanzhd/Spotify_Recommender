@@ -12,6 +12,5 @@ Used libraries:
 
 The File [Project.ipynb](https://github.com/kate14845/accademy_python_project/blob/main/Project.ipynb) is a Jupyter notebook that contains functions for connecting with an user's account throught Spotify Web API, saving user's data into pandas dataframes and visualising them with Plotly.
 
-to use it:
-    1) open the Project.ipynb and run it
-    2) open index.html to see the outputs
+The file "flask_app.py" contains the functions related to spotify managed in several flask routes. This project considered three interactive web pages.
+visit: spotifyme.pythonanywhere.com
