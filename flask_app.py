@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 authorize_endpoint= "https://accounts.spotify.com/authorize?" #it would be used for a GET request
 token_endpoint = "https://accounts.spotify.com/api/token"
 api_endpoint="https://api.spotify.com/v1/" #we will not use it. instead we use sp object made of "spotipy.Spotify" class
-clientid = '1902a4edef574a73afa3a5df1d3a6373'
-clientsecret = '1b633f65a71544388fd1e5aa971d0465'
+clientid = '1902a------a6373'
+clientsecret = '1b633-------d0465'
 scopes = 'user-library-read user-follow-read user-top-read user-read-recently-played'
 
 
